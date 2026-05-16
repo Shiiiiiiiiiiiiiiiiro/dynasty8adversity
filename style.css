@@ -345,6 +345,42 @@ main p {
     color: #333;
 }
 
+.subtitle {
+    font-style: italic;
+    font-size: 1.5rem;
+    color: #C9A84C;
+    text-shadow: 0 0 10px rgba(217, 221, 15, 0.35);
+}
+
+.index-image {
+    width: 100%;
+    height: calc(100vh - 250px);
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 2rem;
+}
+
+.index-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-top: 2px solid rgba(201, 168, 76, 0.3);
+    border-bottom: 2px solid rgba(201, 168, 76, 0.3);
+
+    box-shadow:
+        0 0 30px rgba(0, 0, 0, 0.45),
+        0 0 15px rgba(201, 168, 76, 0.15);
+
+    user-select: none;
+    pointer-events: none;
+}
+
 @keyframes zoomIn {
     from {
         transform: scale(0.85);

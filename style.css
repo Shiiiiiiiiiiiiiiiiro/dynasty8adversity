@@ -316,8 +316,13 @@ main p {
 .contact-card img {
     width: 140px;
     height: 220px;
-    object-fit: cover;
+
+    object-fit: contain;
+    object-position: center;
+
     flex-shrink: 0;
+
+    background: #e9e4cf;
 }
 
 .contact-card-content {

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+    <head>
+        <title>Dynasty 8 Agency</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="images/icon_dynasty_8.png">
+    </head>
+
+    <body>
+
+        <div class="page">
+            <div id="header"></div>
+            <main>
+                <h1 class="main">Dynasty 8 Agency</h1>
+                <p>Découvrez toutes nos offres actuelles</p>
+            </main>
+            <div style="font-family: 'Arimo', sans-serif" class="filter">
+                <select  id="categoryFilter">
+                    <option value="">Toutes les catégories</option>
+                    <option value="Appartements">Appartements</option>
+                    <option value="Bureaux">Bureaux</option>
+                    <option value="Entrepots">Entrepôts</option>
+                    <option value="Garages">Garages</option>
+                    <option value="Maisons">Maisons</option>
+                    <option value="Unfurnished">Unfurnished</option>
+                    <option value="Villa">Villa</option>
+                    <option value="Autres">Autres</option>
+                    <option value="Penthouse">Penthouse</option>
+                </select>
+                <input type="number" id="maxBudget" placeholder="Budget maximum en $">
+                <select id="sortOptions">
+                        <option value="">Tous types</option>
+                        <option value="Achat">Achat</option>
+                        <option value="Location">Location</option>
+                </select>
+                <select id="sortPrice">
+                    <option value="ASC">Prix croissant</option>
+                    <option value="DESC">Prix décroissant</option>
+                </select>
+                <input type="text" id="searchInput" placeholder="Rechercher">
+            </div>
+            <div style="font-family: 'Arimo', sans-serif" class="catalogue">
+            </div>
+        </div>
+
+        <div id="footer"></div>
+        <div id="propertyModal" class="modal">
+            <div class="modal-content" id="modalContent"></div>
+        </div>
+        <script src="js/properties.js"></script>
+        <script src="js/script.js" defer></script>
+    </body>
+
+</html>

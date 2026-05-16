@@ -353,15 +353,18 @@ main p {
 }
 
 .index-image {
-    width: 100%;
-    height: calc(100vh - 250px);
+    width: 100vw;
+    height: calc(100vh - 220px);
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
     overflow: hidden;
 
     display: flex;
     justify-content: center;
     align-items: center;
-
-    margin-top: 2rem;
 }
 
 .index-image img {
@@ -369,6 +372,9 @@ main p {
     height: 100%;
 
     object-fit: cover;
+    object-position: center;
+
+    display: block;
 
     border-top: 2px solid rgba(201, 168, 76, 0.3);
     border-bottom: 2px solid rgba(201, 168, 76, 0.3);

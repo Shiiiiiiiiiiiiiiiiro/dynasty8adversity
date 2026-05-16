@@ -353,23 +353,29 @@ main p {
 }
 
 .index-image {
-    width: 100vw;
-    height: calc(100vh - 220px);
+    width: 90%;
+    max-width: 1600px;
 
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    height: 65vh;
+    max-height: 750px;
+    min-height: 400px;
 
-    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    margin: 2rem auto;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 0 25px rgba(0, 0, 0, 0.45),
+        0 0 10px rgba(201, 168, 76, 0.2);
 }
 
 .index-image img {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
 
     object-fit: cover;
     object-position: center;
